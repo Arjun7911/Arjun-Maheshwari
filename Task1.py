@@ -1,6 +1,5 @@
 import random
 num = random.randint(1, 10)
-print (num)
 
 guess1 = int(input("Enter your first guess : "))
 
@@ -19,14 +18,10 @@ if (guess1 != num):
         print("Incorrect guess")
         print("Your Current Score : 1/3")
         
-        if num >= 1:
-
-            for i in range(2,num):
-                if (num % i) == 0:
-                    print("HINT2 : Number is not a prime number")
-       
-            else:
-                print("HINT2 : Number is a prime number")
+        if (num>5):
+            print("HINT2 : The number is greater than 5")
+        else:
+            print("HINT2 : The number is less than 6")
     
         guess3 = int(input("Enter your final guess : "))
         
